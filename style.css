@@ -452,18 +452,6 @@ body {
         font-size: 2.9vw;
         margin: 10px 0 0 0;
     }
-    /* ---------------------------------------------- */
-    .footer {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas:
-            'logo logo logo logo logo logo'
-            '. ig fb web bnb .'
-            'copy copy copy copy copy copy';
-    }
-    .logo {
-        width: 65%;
-        margin: 0 0 25px 0;
-    }
 }
 
 @media screen and (min-width: 359px) { /* -------------------------------------------------------------------- */
@@ -513,10 +501,6 @@ body {
     .exclusions {
         font-size: 2.7vw;
         margin: 15px 0 0 0;
-    }
-    /* ---------------------------------------------- */
-    .specifics img {
-        width: 11%;
     }
 }
 
