@@ -342,13 +342,13 @@ body {
 .specifics {
     text-align: center;
     font-family: calibri;
-    font-size: 3vw;
+    font-size: 2.8vw;
     margin: 30px 0 10px 0;
 }
 
 .specifics img {
     width: 12%;
-    margin: 20px 0 10px 0;
+    margin: 30px 0 10px 0;
 }
 
 /* -- FOOTER ------------------------------------------------------------------------------------------------ */
@@ -406,7 +406,7 @@ body {
 .copyright {
     grid-area: copy;
     font-family: calibri;
-    font-size: 2vw;
+    font-size: 2.1vw;
     margin: 17px 0 0 0;
 }
 
