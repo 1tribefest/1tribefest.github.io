@@ -342,7 +342,7 @@ body {
 .specifics {
     text-align: center;
     font-family: calibri;
-    font-size: 3.7vw;
+    font-size: 3.5vw;
     margin: 10px 0 0 0;
 }
 
@@ -406,7 +406,7 @@ body {
 .copyright {
     grid-area: copy;
     font-family: calibri;
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     margin: 17px 0 0 0;
 }
 
