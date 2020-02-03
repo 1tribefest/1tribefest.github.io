@@ -157,7 +157,7 @@ body {
 .descr {
     grid-area: text;
     font-family: calibri;
-    font-size: 3.1vw;
+    font-size: 3vw;
     text-align: center;
     margin: 0 10px 0 10px;
 }
