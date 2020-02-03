@@ -356,11 +356,11 @@ body {
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        'logo logo logo logo logo logo logo logo logo logo logo logo'
-        '. . . . ig fb web bnb . . . .'
-        'copy copy copy copy copy copy copy copy copy copy copy copy';
+        'logo logo logo logo logo logo logo logo logo logo'
+        '. . . ig fb web bnb . . .'
+        'copy copy copy copy copy copy copy copy copy copy';
     justify-items: center;
     padding: 20px;
     margin: 30px 0 0 0;
