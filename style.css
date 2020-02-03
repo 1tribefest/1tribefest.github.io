@@ -1,0 +1,1314 @@
+@font-face {
+    font-family: tribal;
+    src: url(font/tribal.ttf)
+}
+
+@font-face {
+    font-family: rustic;
+    src: url(font/rustic.ttf)
+}
+
+@font-face {
+    font-family: fyodor;
+    src: url(font/fyodor.ttf)
+}
+
+body {
+    background-image: url(img/body-bg.jpeg);
+    background-size: 100%;
+    text-decoration: none;
+    color: white;
+}
+
+.tablet {
+    display: none;
+}
+
+.desktop {
+    display: none;
+}
+
+/* -- HERO -------------------------------------------------------------------------------------------------- */
+
+.hero {
+    display: grid;
+    grid-gap: none;
+    background-image: url(img/background-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.presents {
+    display: grid;
+    align-items: start;
+    justify-items: center;
+}
+
+.presents img {
+    width: 30%;
+}
+
+.title {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 25px 0 0 0;
+}
+
+.title img {
+    width: 85%;
+}
+
+.subtitle {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 35px 0 35px 0;
+}
+
+.subtitle img {
+    width: 85%;
+}
+
+.pattern {
+    padding: 8px 0 10px 0;
+}
+
+/* -- ARTISTS ----------------------------------------------------------------------------------------------- */
+
+.lineup-head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0 25px 0;
+}
+
+.lineup-head img {
+    width: 95%;
+}
+
+.artist {
+    display: grid;
+    grid-template-columns: 35% 5% 7% 1fr 1fr 1fr 7%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'img divider title title title title title'
+        'img divider text text text text text'
+        'img divider . social music web .';
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin: 10px 0 0 0;
+}
+
+.jonny-wayne {
+    background-image: url(img/artists/jonny-wayne-bg.svg);
+}
+
+.j-brave {
+    background-image: url(img/artists/j-brave-bg.svg);
+}
+
+.shylah-ray {
+    background-image: url(img/artists/shylah-ray-bg.svg);
+}
+
+.fantuzzi {
+    background-image: url(img/artists/fantuzzi-bg.svg);
+}
+
+.nerissa {
+    background-image: url(img/artists/nerissa-bg.svg);
+}
+
+.kayt-pearl {
+    background-image: url(img/artists/kayt-pearl-bg.svg);
+}
+
+.woven-green {
+    background-image: url(img/artists/woven-green-bg.svg);
+}
+
+.ruckus {
+    background-image: url(img/artists/ruckus-bg.svg);
+}
+
+.pic {
+    grid-area: img;
+    width: 100%;
+}
+
+.divider {
+    grid-area: divider;
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    grid-area: title;
+    font-family: fyodor;
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: 2pt;
+    margin: 20px 0 0 0;
+}
+
+.descr {
+    grid-area: text;
+    font-family: calibri;
+    font-size: 3.3vw;
+    text-align: center;
+    margin: 0 10px 0 10px;
+}
+
+.artist a:link {
+    color: white;
+}
+
+.artist a:visited {
+    color: white;
+}
+
+.artist i {
+    font-size: 20px;
+    margin: 10px 0 0 0;
+}
+
+.artist i:hover {
+    cursor: pointer;
+    color: #91ba5c;
+    text-shadow: 0px 0px 10px black;
+}
+
+.social {
+    grid-area: social;
+
+}
+
+.music {
+    grid-area: music;
+}
+
+.web {
+    grid-area: web;
+}
+
+.local-artists {
+    display: grid;
+    justify-items: center;
+    background-image: url(img/artists/local-artists-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    font-family: fyodor;
+    letter-spacing: 2pt;
+    margin: 10px 0 0 0;
+}
+
+/* -- WORKSHOPS --------------------------------------------------------------------------------------------- */
+
+.workshop-head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0 25px 0;
+}
+
+.workshop-head img {
+    width: 95%;
+}
+
+.workshops {
+    display: grid;
+    background-image: url(img/background-2-01.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    font-family: fyodor;
+    letter-spacing: 2pt;
+    font-size: 5vw;
+    padding: 0 20px;
+}
+
+.ws-first {
+    margin: 20px 0 20px 0;
+}
+
+.ws-mid {
+    margin: 0 0 20px 0;
+}
+
+.ws-last {
+    margin: 0 0 20px 0;
+}
+
+/* -- PRICING ----------------------------------------------------------------------------------------------- */
+
+.pricing-head {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 30px 0 25px 0;
+}
+
+.pricing-head img {
+    width: 95%;
+}
+
+.pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'tier1 tier2'
+        'btn1 btn2';
+    justify-items: center;
+}
+
+.tier1 {
+    grid-area: tier1;
+}
+
+.tier2 {
+    grid-area: tier2;
+}
+
+.tier {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    width: 65%;
+    border-color: white;
+    border-style: solid;
+    border-width: 5px;
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+
+.option {
+    font-family: fyodor;
+    font-size: 5vw;
+    letter-spacing: 2pt;
+}
+
+.details {
+    font-family: calibri;
+    font-size: 3vw;
+    margin: 10px 0 0 0;
+}
+
+.price {
+    font-family: tribal;
+    font-size: 7vw;
+    margin: 20px 0 0 0;
+}
+
+.exclusions {
+    font-family: calibri;
+    font-size: 2.5vw;
+    margin: 15px 0 0 0;
+}
+
+.buy1 {
+    grid-area: btn1;
+}
+
+.buy2 {
+    grid-area: btn2;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    background-color: #91ba5c;
+    border-style: none;
+    padding: 10px 10px 10px 15px;
+    margin: 15px 0 0 0;
+    font-family: fyodor;
+    font-size: 5vw;
+    letter-spacing: 2pt;
+    color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px black;
+    background-color: #63803f;
+}
+
+/* -- DETAILS ----------------------------------------------------------------------------------------------- */
+
+.specifics {
+    text-align: center;
+    font-family: calibri;
+    font-size: 3.7vw;
+    margin: 10px 0 0 0;
+}
+
+.specifics img {
+    width: 12%;
+    margin: 35px 0 10px 0;
+}
+
+/* -- FOOTER ------------------------------------------------------------------------------------------------ */
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        'logo logo logo logo logo logo logo logo'
+        '. . ig fb web bnb . .'
+        'copy copy copy copy copy copy copy copy';
+    justify-items: center;
+    padding: 20px;
+    margin: 30px 0 0 0;
+    background-color: white;
+    color: #313131;
+    font-size: 20px;
+}
+
+.footer a:link {
+    color: #313131;
+}
+
+.footer a:visited {
+    color: #313131;
+}
+
+.footer a:hover {
+    cursor: pointer;
+    color: #888887;
+}
+
+.logo {
+    grid-area: logo;
+    width: 50%;
+    margin: 0 0 25px 0;
+}
+
+.instagram {
+    grid-area: ig;
+}
+
+.facebook {
+    grid-area: fb;
+}
+
+.airbnb {
+    grid-area: bnb;
+}
+
+.website {
+    grid-area: web;
+}
+
+.copyright {
+    grid-area: copy;
+    font-family: calibri;
+    font-size: 2.5vw;
+    margin: 17px 0 0 0;
+}
+
+/* -- MEDIA QUERIES ----------------------------------------------------------------------------------------- */
+
+@media screen and (min-width: 300px) {/* -------------------------------------------------------------------- */
+    .artist {
+        grid-template-rows: 1fr 1fr 30%;
+    }
+    .name {
+        margin: 10px 0 0 0;
+    }
+    .artist i {
+        font-size: 15px;
+        margin: 0 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .pricing {
+        grid-template-columns: 1fr 2% 1fr;
+        grid-template-areas:
+            'tier1 . tier2'
+            'btn1 . btn2';
+    }
+    .tier {
+        border-width: 4px;
+        padding: 15px;
+    }
+    .option {
+        font-size: 5vw;
+        letter-spacing: 2pt;
+    }
+    .details {
+        font-size: 3.2vw;
+        margin: 10px 0 0 0;
+    }
+    .price {
+        font-size: 7vw;
+        margin: 10px 0 0 0;
+    }
+    .exclusions {
+        font-size: 2.9vw;
+        margin: 10px 0 0 0;
+    }
+    /* ---------------------------------------------- */
+    .specifics img {
+        margin: 20px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo'
+            '. ig fb web bnb .'
+            'copy copy copy copy copy copy';
+    }
+    .logo {
+        width: 65%;
+        margin: 0 0 25px 0;
+    }
+    .copyright {
+        font-size: 3.2vw;
+    }
+}
+
+@media screen and (min-width: 359px) { /* -------------------------------------------------------------------- */
+    .artist i {
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+    .copyright {
+        font-size: 3vw;
+        margin: 17px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 399px) { /* -------------------------------------------------------------------- */
+    .artist i {
+        font-size: 20px;
+        margin: 0 0 15px 0;
+    }
+    /* ---------------------------------------------- */
+    .specifics img {
+        margin: 20px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+}
+
+@media screen and (min-width: 419px) { /* -------------------------------------------------------------------- */
+    .specifics {
+        font-size: 3.5vw;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media screen and (min-width: 449px) { /* -------------------------------------------------------------------- */
+    .name {
+        margin: 15px 0 0 0;
+    }
+    .descr {
+        font-size: 3.3vw;
+        margin: 0 15px 0 15px;
+    }
+    .artist i {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+    /* ---------------------------------------------- */
+    .ws-first {
+        margin: 30px 0 20px 0;
+    }
+    .ws-mid {
+        margin: 0 0 20px 0;
+    }
+    .ws-last {
+        margin: 0 0 30px 0;
+    }
+    /* ---------------------------------------------- */
+    .details {
+        font-size: 3vw;
+        margin: 15px 0 0 0;
+    }
+    .price {
+        margin: 15px 0 0 0;
+    }
+    .exclusions {
+        font-size: 2.7vw;
+        margin: 15px 0 0 0;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 3.3vw;
+        margin: 25px 0 0 0;
+    }
+    .specifics img {
+        width: 11%;
+    }
+}
+
+@media screen and (min-width: 499px) { /* -------------------------------------------------------------------- */
+    .lineup-head {
+        margin: 40px 0 30px 0;
+    }
+    .name {
+        font-size: 5.5vw;
+        margin: 15px 0 0 0;
+    }
+    .descr {
+        font-size: 3.3vw;
+        margin: 0 15px 0 15px;
+    }
+    .artist i {
+        font-size: 25px;
+        margin: 0 0 20px 0;
+    }
+    .local-artists {
+        font-size: 3.5vw;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head {
+        margin: 40px 0 30px 0;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head {
+        margin: 40px 0 30px 0;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 3.1vw;
+        margin: 30px 0 0 0;
+    }
+    .specifics img {
+        width: 10%;
+        margin: 30px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo'
+            '. . ig fb web bnb . .'
+            'copy copy copy copy copy copy copy copy';
+    }
+    .logo {
+        width: 55%;
+        margin: 0 0 25px 0;
+    }
+    .copyright {
+        font-size: 2.4vw;
+    }
+}
+
+@media screen and (min-width: 599px) { /* -------------------------------------------------------------------- */
+    .lineup-head img {
+        width: 85%;
+    }
+    .artist {
+        grid-template-rows: 1fr 1fr 30%;
+    }
+    .name {
+        font-size: 5.5vw;
+        margin: 15px 0 0 0;
+    }
+    .descr {
+        font-size: 3vw;
+        margin: 0 40px 0 40px;
+    }
+    .artist i {
+        font-size: 25px;
+        margin: 0 0 15px 0;
+    }
+    .artist img {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 699px) { /* -------------------------------------------------------------------- */    
+    .presents img {
+        width: 25%;
+    }
+    .title {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 50px 0 0 0;
+    }
+    .title img {
+        width: 80%;
+    }
+    .subtitle {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        margin: 55px 0 55px 0;
+    }
+    .subtitle img {
+        width: 80%;
+    }
+    .pattern {
+        padding: 8px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .lineup-head img {
+        width: 80%;
+    }
+    .artists {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'jon brave'
+            'ray tuzzi'
+            'ner kayt'
+            'wov ruck';
+        justify-items: center;
+        grid-gap: 10px;
+    }
+    .jonny-wayne {
+        grid-area: jon;
+    }
+    .j-brave {
+        grid-area: brave;
+    }
+    .shylah-ray {
+        grid-area: ray;
+    }
+    .fantuzzi {
+        grid-area: tuzzi;
+    }
+    .nerissa {
+        grid-area: ner;
+    }
+    .kayt-pearl {
+        grid-area: kayt;
+    }
+    .woven-green {
+        grid-area: wov;
+    }
+    .ruckus {
+        grid-area: ruck;
+    }
+    .artist {
+        grid-template-columns: 35% 5% 7% 1fr 1fr 1fr 7%;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            'img divider title title title title title'
+            'img divider text text text text text'
+            'img divider . social music web .';
+        justify-items: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        margin: 0 0 0 0;
+    }
+    .name {
+        font-size: 3vw;
+        margin: 10 0 0 0;
+    }
+    .descr {
+        font-size: 1.8vw;
+        margin: 5px 5px 0 5px;
+    }
+    .artist i {
+        font-size: 15px;
+        margin: 10px 0 0 0;
+    }
+    .artist img {
+        height: auto;
+        height: 100%
+    }
+    .divider {
+        width: 100%;
+        height: 100%;
+    }
+    .local-artists {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        font-size: 3vw;
+        letter-spacing: 2pt;
+        height: 80px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 80%;
+    }
+    .workshops {
+        font-size: 4vw;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 80%;
+    }
+    .pricing {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'tier1 tier2'
+            'btn1 btn2';
+    }
+    .tier {
+        width: 65%;
+        padding: 20px;
+    }
+    .option {
+        font-family: fyodor;
+        font-size: 4.8vw;
+    }
+    .details {
+        font-family: calibri;
+        font-size: 2.2vw;
+        margin: 10px 0 0 0;
+    }
+    .price {
+        font-family: tribal;
+        font-size: 7vw;
+        margin: 20px 0 0 0;
+    }
+    .exclusions {
+        font-family: calibri;
+        font-size: 2vw;
+        margin: 15px 0 0 0;
+    }
+    .btn {
+        padding: 10px 20px 10px 25px;
+        margin: 20px 0 0 0;
+        font-size: 3.5vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 2.5vw;
+        margin: 30px 0 0 0;
+    }
+    
+    .specifics img {
+        width: 9%;
+        margin: 35px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo'
+            '. . . ig fb web bnb . . .'
+            'copy copy copy copy copy copy copy copy copy copy';
+        padding: 20px;
+        margin: 50px 0 0 0;
+        font-size: 20px;
+    }
+    .logo {
+        width: 35%;
+    }
+    .copyright {
+        font-size: 2vw;
+    }
+}
+@media screen and (min-width: 799px) { /* -------------------------------------------------------------------- */
+    .name {
+        font-size: 3.2vw;
+        margin: 10 0 0 0;
+    }
+    .descr {
+        font-size: 1.85vw;
+        margin: 5px 5px 0 5px;
+    }
+    .artist i {
+        font-size: 20px;
+        margin: 10px 0 0 0;
+    }
+    /* ---------------------------------------------- */
+    .tier {
+        width: 60%;
+    }
+    .option {
+        font-size: 4.6vw;
+    }
+    .details {
+        font-size: 2.1vw;
+        margin: 10px 0 0 0;
+    }
+    .price {
+        font-size: 6.5vw;
+        margin: 20px 0 0 0;
+    }
+    .exclusions {
+        font-size: 1.8vw;
+        margin: 15px 0 0 0;
+    }
+    .btn {
+        padding: 10px 20px 10px 25px;
+        margin: 20px 0 0 0;
+        font-size: 3.5vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 2.3vw;
+        margin: 30px 0 0 0;
+    }
+    .specifics img {
+        width: 8%;
+        margin: 35px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .copyright {
+        font-size: 1.8vw;
+    }
+}
+@media screen and (min-width: 899px) { /* -------------------------------------------------------------------- */
+    .presents img {
+        width: 20%;
+    }
+    .title {
+        margin: 70px 0 0 0;
+    }
+    .title img {
+        width: 75%;
+    }
+    .subtitle {
+        margin: 70px 0 60px 0;
+    }
+    .subtitle img {
+        width: 75%;
+    }
+    .pattern {
+        padding: 8px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .lineup-head img {
+        width: 75%;
+    }
+    .name {
+        font-size: 3vw;
+        margin: 10 0 0 0;
+    }
+    .descr {
+        font-size: 1.8vw;
+        margin: 5px 5px 0 5px;
+    }
+    .artist i {
+        font-size: 20px;
+        margin: 15px 0 0 0;
+    }
+    .local-artists {
+        font-size: 2.8vw;
+        height: 90px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 75%;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 75%
+    }
+    .tier {
+        width: 55%;
+    }
+    .option {
+        font-size: 4vw;
+    }
+    .details {
+        font-size: 1.8vw;
+    }
+    .price {
+        font-size: 6.2vw;
+    }
+    .exclusions {
+        font-size: 1.6vw;
+    }
+    .btn {
+        font-size: 3.2vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 2vw;
+        margin: 30px 0 0 0;
+    }
+    .specifics img {
+        width: 7%;
+        margin: 40px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo logo logo logo logo'
+            '. . . . . ig fb web bnb . . . . .'
+            'copy copy copy copy copy copy copy copy copy copy copy copy copy copy';
+        padding: 20px;
+        margin: 50px 0 0 0;
+        font-size: 20px;
+    }
+    .logo {
+        width: 30%;
+    }
+    .copyright {
+        font-size: 1.5vw;
+    }
+}
+@media screen and (min-width: 1023px) { /* -------------------------------------------------------------------- */
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: grid;
+    }
+    /* ---------------------------------------------- */
+    .presents img {
+        width: 17%;
+    }
+    .title {
+        margin: 60px 0 0 0;
+    }
+    .title img {
+        width: 70%;
+    }
+    .subtitle {
+        margin: 60px 0 60px 0;
+    }
+    .subtitle img {
+        width: 70%;
+    }
+    .pattern {
+        padding: 8px 0 10px 0;
+    }
+    /* ---------------------------------------------- */
+    .lineup-head img {
+        width: 65%;
+    }
+    .descr {
+        font-size: 1.7vw;
+    }
+    .artist i {
+        font-size: 24px;
+        margin: 15px 0 0 0;
+    }
+    .local-artists {
+        font-size: 2.5vw;
+        height: 90px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 65%;
+    }
+    .workshops {
+        font-size: 3vw;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 65%;
+    }
+    .pricing {
+        grid-template-columns: 10% 1fr 1fr 10%;
+        grid-template-areas:
+            '. tier1 tier2 .'
+            '. btn1 btn2 .';
+    }
+    .tier {
+        width: 60%;
+    }
+    .option {
+        font-size: 3.5vw;
+    }
+    .details {
+        font-size: 1.7vw;
+    }
+    .price {
+        font-size: 5vw;
+    }
+    .exclusions {
+        font-size: 1.4vw;
+    }
+    .btn {
+        font-size: 3vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 1.8vw;
+    }
+    .specifics img {
+        width: 6%;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo'
+            '. . . . . . ig fb web bnb . . . . . .'
+            'copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy';
+        font-size: 20px;
+    }
+    .logo {
+        width: 25%;
+    }
+    .copyright {
+        font-size: 1.2vw;
+    }
+}
+@media screen and (min-width: 1199px) { /* -------------------------------------------------------------------- */
+    .tablet {
+        display: none;
+    }
+    .desktop {
+        display: grid;
+    }
+    /* ---------------------------------------------- */
+    .presents img {
+        width: 15%;
+    }
+    .title {
+        margin: 60px 0 0 0;
+    }
+    .title img {
+        width: 60%;
+    }
+    .subtitle {
+        margin: 60px 0 60px 0;
+    }
+    .subtitle img {
+        width: 60%;
+    }
+    /* ---------------------------------------------- */
+    .lineup-head img {
+        width: 55%;
+    }
+    .name {
+        font-size: 2.7vw;
+        margin: 20px 0 0 0;
+    }
+    .descr {
+        font-size: 1.6vw;
+        margin: 10px 20px 0 20px;
+    }
+    .artist i {
+        font-size: 24px;
+        margin: 15px 0 0 0;
+    }
+    .local-artists {
+        font-size: 2.2vw;
+        height: 90px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 55%;
+    }
+    .workshops {
+        font-size: 2.8vw;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 55%;
+    }
+    .tier {
+        width: 55%;
+    }
+    .option {
+        font-size: 3.2vw;
+    }
+    .details {
+        font-size: 1.5vw;
+    }
+    .price {
+        font-size: 4vw;
+    }
+    .exclusions {
+        font-size: 1.2vw;
+    }
+    .btn {
+        font-size: 2.5vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 1.5vw;
+    }
+    .specifics img {
+        width: 5%;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo'
+            '. . . . . . . ig fb web bnb . . . . . . .'
+            'copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy';
+        font-size: 20px;
+    }
+    .logo {
+        width: 20%;
+    }
+    .copyright {
+        font-size: 1.1vw;
+    }
+}
+@media screen and (min-width: 1299px) { /* -------------------------------------------------------------------- */
+    .presents img {
+        width: 13%;
+    }
+    .title {
+        margin: 60px 0 0 0;
+    }
+    .title img {
+        width: 55%;
+    }
+    .subtitle {
+        margin: 60px 0 60px 0;
+    }
+    .subtitle img {
+        width: 55%;
+    }
+    /* ---------------------------------------------- */
+    .lineup-head img {
+        width: 50%;
+    }
+    .artist {
+        height: 200px;
+    }
+    .name {
+        font-size: 2.5vw;
+        margin: 20px 0 0 0;
+    }
+    .descr {
+        font-size: 1.5vw;
+        margin: 10px 30px 0 30px;
+    }
+    .artist i {
+        font-size: 26px;
+        margin: 15px 0 0 0;
+    }
+    .local-artists {
+        font-size: 2vw;
+        height: 95px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 50%;
+    }
+    .workshops {
+        font-size: 2.5vw;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 50%;
+    }
+    .pricing {
+        grid-template-columns: 18% 1fr 1fr 18%;
+        grid-template-areas:
+            '. tier1 tier2 .'
+            '. btn1 btn2 .';
+    }
+    .tier {
+        width: 55%;
+    }
+    .option {
+        font-size: 3vw;
+    }
+    .details {
+        font-size: 1.3vw;
+    }
+    .price {
+        font-size: 3.8vw;
+    }
+    .exclusions {
+        font-size: 1vw;
+    }
+    .btn {
+        font-size: 2.2vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 1.4vw;
+    }
+    .specifics img {
+        width: 4%;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo'
+            '. . . . . . . . ig fb web bnb . . . . . . . .'
+            'copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy';
+        font-size: 20px;
+    }
+    .logo {
+        width: 20%;
+    }
+    .copyright {
+        font-size: 1vw;
+    }
+}
+@media screen and (min-width: 1399px) { /* -------------------------------------------------------------------- */
+    .artist {
+        height: 220px;
+    }
+    .name {
+        font-size: 2.5vw;
+        margin: 25px 0 0 0;
+    }
+    .descr {
+        font-size: 1.45vw;
+        margin: 15px 50px 0 50px;
+    }
+    .artist i {
+        font-size: 28px;
+        margin: 20px 0 0 0;
+    }
+    .local-artists {
+        font-size: 2vw;
+        height: 100px;
+    }
+    /* ---------------------------------------------- */
+    .workshop-head img {
+        width: 50%;
+    }
+    .workshops {
+        font-size: 2.5vw;
+    }
+    /* ---------------------------------------------- */
+    .pricing-head img {
+        width: 50%;
+    }
+    .pricing {
+        grid-template-columns: 18% 1fr 1fr 18%;
+        grid-template-areas:
+            '. tier1 tier2 .'
+            '. btn1 btn2 .';
+    }
+    .tier {
+        width: 55%;
+    }
+    .option {
+        font-size: 3vw;
+    }
+    .details {
+        font-size: 1.3vw;
+    }
+    .price {
+        font-size: 3.8vw;
+    }
+    .exclusions {
+        font-size: 1vw;
+    }
+    .btn {
+        font-size: 2.2vw;
+    }
+    /* ---------------------------------------------- */
+    .specifics {
+        font-size: 1.4vw;
+    }
+    .specifics img {
+        width: 4%;
+    }
+    /* ---------------------------------------------- */
+    .footer {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            'logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo logo'
+            '. . . . . . . . ig fb web bnb . . . . . . . .'
+            'copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy copy';
+        font-size: 20px;
+    }
+    .logo {
+        width: 20%;
+    }
+    .copyright {
+        font-size: 1vw;
+    }
+}
