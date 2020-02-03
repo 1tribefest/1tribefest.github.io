@@ -343,24 +343,24 @@ body {
 .specifics {
     text-align: center;
     font-family: calibri;
-    font-size: 2.8vw;
+    font-size: 2.6vw;
     margin: 30px 0 10px 0;
 }
 
 .specifics img {
     width: 12%;
-    margin: 30px 0 10px 0;
+    margin: 35px 0 10px 0;
 }
 
 /* -- FOOTER ------------------------------------------------------------------------------------------------ */
 
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        'logo logo logo logo logo logo logo logo'
-        '. . ig fb web bnb . .'
-        'copy copy copy copy copy copy copy copy';
+        'logo logo logo logo logo logo logo logo logo logo'
+        '. . . ig fb web bnb . . .'
+        'copy copy copy copy copy copy copy copy copy copy';
     justify-items: center;
     padding: 20px;
     margin: 30px 0 0 0;
